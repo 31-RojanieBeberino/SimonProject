@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- included the css -->
+     <link rel="stylesheet" href="./style/style.css">
+     <link rel="stylesheet" href="./style/custom-responsive.css">
+</head>
+<body>
+
+      <!-- sticky navbar -->
+      <section id="sticky" class="d-flex justify-content-center align-items-center" style="background: #0A0A0A;">
+        <div class="row col-12">
+            <div class="d-flex justify-content-end flex-row-reverse align-items-center gap-3 col-6 col-lg-6 p-2 m-0">
+                
+                <!-- humburger toggle -->
+                <a href="index.html">
+                    <img src="./assets/image/Capture2.png" style="width: 60px;" class="img-fluid" alt="Responsive image">
+                </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav d-flex flex-column gap-3 px-3" id="nav">
+                <a href="#">ABOUT</a>
+                <a href="#">NEWS</a>
+                <a href="#">PUBLICATION</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">BLOGS</a>
+                <a href="#">EXPERIENCE</a>
+                <a href="#">CONTACT</a>
+            </nav>
+            </div>
+
+            <div class="col-6 col-lg-6 d-flex justify-content-end align-items-center gap-3 p-3 m-0">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-linkedin"></i>
+                <label class="switch">
+                    <input type="checkbox" id="stickytoggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            
+        <script>
+            function toggleMenu() {
+                document.getElementById("nav").classList.toggle("active");
+            }
+            </script>
+       </div>
+     </section>
+     
+    <!-- /sticky navbar -->
+     
+    <section id="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-lg-2 p-0 m-0">
+                    <nav class="p-2">
+                        
+                        <a href="index.html">
+                            <img src="./assets/image/Capture2.png" style="width: 100px;" class="img-fluid" alt="Responsive image">
+                        </a>
+                        
+                       <ul class="d-flex flex-column gap-2 p-3">
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="#">PUBLICATION</a>
+                        </li>
+                        <li>
+                            <a href="#">PROJECTS</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">BLOGS</a>
+                        </li>
+                        <li>
+                            <a href="#">EXPERIENCE</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                       </ul>
+                    </nav>
+                </div>
+                <div id="banner-col" class="col-12 d-flex justify-content-end gap-3 p-3 m-0">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+   <!-- Blog section -->
+    <section id="blog-page">
+        <div class="contanier-fluid d-flex flex-column justify-content-center align-items-center px-3 p-5">
+            <div class="row col-12 col-xl-10 d-flex justify-content-between align-items-center gap-4">
+                    <div class="col-12 col-xl-2 d-flex gap-0 justify-content-between" style="border-bottom: 1px solid #707070;">
+                        <p>Search By Title</p>
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="col-12 col-xl-4 d-flex gap-5 justify-content-end align-items-center">
+                        <select name="category" id="category">
+                            <option value="">Select Category</option>
+                            <option value="">Lan-Grasp</option>
+                            <option value="">Semantic Object</option>
+                            <option value="">Grasping With Lan-Grasp</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div class="row col-12 col-xl-10 px-0 p-5">
+                <div id="card-row" class="w-100 d-flex p-0 flex-wrap">
+                    <div class="col-12 col-xl-6 p-0">
+                        <img src="./assets/image/blog-img1.webp" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-12 col-xl-6 p-5 d-flex flex-column justify-content-between">
+                        <h6 class="mb-5">
+                            Sep 09, 2024 - 7 Min Read
+                        </h6>
+
+                        <h3>
+                            Lan-Grasp: Revolutionizing Object Grasping With Large Language Models
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center gap-5 col-12 col-xl-10 px-0 p-5">
+
+                <div id="card-column" class="col-12 col-xl-3 d-flex p-5 flex-column justify-content-between">
+                    <img src="./assets/image//pdf-svgrepo-com.png" style="width: 50px;" class="img-fluid" alt="Responsive image">
+                    <h3>
+                        Leveraging Large Language Models For Smart Object Grasping: The Lan-Grasp Approach
+                    </h3>
+                    
+                    <h6  class="border-bot">
+                        Read The E-Book
+                    </h6>
+
+                </div>
+
+                <div id="card-column" class="col-12 col-xl-4 d-flex p-0 flex-column">
+                    <div class="w-100 p-0">
+                        <img src="./assets/image/blog-img2.webp" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="p-5 d-flex flex-column justify-content-between">
+                        <h6>
+                            Aug 29, 2024 - 4 Min Read
+                        </h6>
+
+                        <h3>
+                            Lan-Grasp: Bridging Language And Robotics For Advanced Object Grasping
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-column" class="col-12 col-xl-4 d-flex p-0 flex-column">
+                    <div class="w-100 p-0">
+                        <img src="./assets/image/blog-img3.webp" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="p-5 d-flex flex-column justify-content-between">
+                        <h6>
+                            Aug 29, 2024 - 4 Min Read
+                        </h6>
+
+                        <h3>
+                            Semantic Object Grasping With Lan-Grasp: The Power Of Large Language Models
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row col-12 col-xl-10 px-0 p-5">
+                <div id="card-row" class="w-100 d-flex p-0 flex-wrap">
+                
+                    <div class="col-12 col-xl-6 p-5 d-flex flex-column justify-content-between">
+                        <h6 class="mb-5">
+                            Aug 29, 2024 - 4 Min Read
+                        </h6>
+
+                        <h3>
+                            How Lan-Grasp Uses AI To Understand And Grasp Objects Intuitively
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 p-0">
+                        <img src="./assets/image/Without_Language_2.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center gap-5 col-12 col-xl-10 px-0 p-5">
+
+                <div id="card-column" class="col-12 col-xl-4 d-flex p-0 flex-column">
+                    <div class="w-100 p-0">
+                        <img src="./assets/image/blog-img4.webp" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="p-5 d-flex flex-column justify-content-between">
+                        <h6>
+                            Aug 29, 2024 - 4 Min Read
+                        </h6>
+
+                        <h3>
+                            The Intersection Of Language Models And Robotic Precision
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-column" class="col-12 col-xl-4 d-flex p-0 flex-column">
+                    <div class="w-100 p-0">
+                        <img src="./assets/image/blog-img5.webp" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="p-5 d-flex flex-column justify-content-between">
+                        <h6>
+                            Aug 29, 2024 - 4 Min Read
+                        </h6>
+
+                        <h3>
+                            Semantic Object Grasping Meets AI: Discover The Lan-Grasp Advantage
+                        </h3>
+                        
+                        <div class="col d-flex justify-content-between align-items-end">
+                            <h6>Read More</h6>
+                            <a href="blog - inner.html">
+                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-column" class="col-12 col-xl-3 d-flex p-5 flex-column justify-content-between">
+                    <img src="./assets/image//pdf-svgrepo-com.png" style="width: 50px;" class="img-fluid" alt="Responsive image">
+                    <h3>
+                        From Words To Action: How Lan-Grasp Transforms Object Grasping With AI
+                    </h3>
+                    
+                    <h6  class="border-bot">
+                        Read The E-Book
+                    </h6>
+
+                </div>
+
+            </div>
+            
+            <div class="col-12 col-xl-10" style="border-top: 1px solid #707070;">
+                <div class="d-flex m-5 mx-0 justify-content-between">
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="" class="btn-text">PREVIOUS ARTICLES</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="" class="btn-text">NEXT ARTICLES</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-10 p-4 d-flex flex-wrap justify-content-start align-items-center gap-5" style="background: #F8F8F8; border-radius: 12px;">
+                <div class="">
+                    <img src="./assets/image/1708276955468.png" style="width: 300px;" class="img-fluid" alt="Responsive image">
+                </div>
+                <div>
+                    <h2>
+                        Simone Silenzi
+                    </h2>
+                    <h5 class="m-0 p-0">
+                        Robot Learning | Software Engineer C++ and Python
+                    </h5>
+                    <h5 class="m-0 p-0">
+                        Sandstrasse 49, 80335 Munchen, Germany
+                    </h5>
+
+                    <div class="w-100 d-flex justify-content-start mt-3">
+                        <div class="footer-icons d-flex align-items-center flex-wrap gap-3">
+
+                         <div class="image-wrap d-flex justify-content-center">
+                             <a href="">
+                                 <img src="./assets/image/email.svg"alt="">
+                             </a>
+                         </div>
+
+                         <div class="image-wrap d-flex justify-content-center">
+                             <a href="">
+                                 <img src="./assets/image/linkedln.svg"alt="">
+                             </a>
+                         </div>
+
+                         <div class="image-wrap d-flex justify-content-center">
+                             <a href="">
+                                 <img src="./assets/image/github.svg"alt="">
+                             </a>
+                         </div>
+
+                         <div class="image-wrap d-flex justify-content-center">
+                             <a href="">
+                                 <img src="./assets/image/g.svg"alt="">
+                             </a>
+                         </div>
+
+                         <div class="image-wrap d-flex justify-content-center">
+                             <a href="">
+                                 <img src="./assets/image/id.svg"alt="">
+                             </a>
+                         </div>
+
+                        </div>
+                     </div>
+                </div>
+
+                
+                
+            </div>
+
+        </div>
+    </section>
+
+     
+
+      
+       <!-- Footer -->
+
+       <section id="footer">
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center p-0">
+            <div id="ffooter" class="col-12 p-3 w-100 d-flex justify-content-center align-items-center" style="background: #F8F8F8;">
+                <div class="column col-12 col-xl-10">
+                    <div class="row d-flex justify-content-center align-items-center pb-0">
+                        <div class="col-12 col-xl-1">
+                            <img src="./assets/image/logoipsum-253 (7).png" style="width: 120px;" class="img-fluid IMG" alt="Responsive image">
+                        </div>
+                        <div class="col-12 col-xl-8">
+                            <nav>
+                                <ul class="d-flex flex-wrap justify-content-center gap-4 p-1 m-0">
+                                    <li>
+                                        <a href="#" class="footer-a">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">NEWS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">PUBLICATION</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">PROJECTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">BLOGS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">EXPERIENCE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-a">CONTACT</a>
+                                    </li>
+                                   </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-xl-3">
+                           <div class="footer-icons d-flex flex-wrap gap-2">
+
+                            <div class="image-wrap d-flex justify-content-center">
+                                <a href="">
+                                    <img src="./assets/image/email.svg"alt="">
+                                </a>
+                            </div>
+
+                            <div class="image-wrap d-flex justify-content-center">
+                                <a href="">
+                                    <img src="./assets/image/linkedln.svg"alt="">
+                                </a>
+                            </div>
+
+                            <div class="image-wrap d-flex justify-content-center">
+                                <a href="">
+                                    <img src="./assets/image/github.svg"alt="">
+                                </a>
+                            </div>
+
+                            <div class="image-wrap d-flex justify-content-center">
+                                <a href="">
+                                    <img src="./assets/image/g.svg"alt="">
+                                </a>
+                            </div>
+
+                            <div class="image-wrap d-flex justify-content-center">
+                                <a href="">
+                                    <img src="./assets/image/id.svg"alt="">
+                                </a>
+                            </div>
+
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="sfooter" class="row w-100 p-1 text-center" style="background: #000;">
+                <span>
+                    © 2025 simonesilenzi unless specified otherwise
+                </span>
+            </div>
+
+        </div>
+       </section>
+
+       
+    <script src="script/blog.js"></script>
+</body>
+</html>
