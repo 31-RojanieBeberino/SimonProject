@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const h5 = document.querySelectorAll("h5");
     const h6 = document.querySelectorAll("h6");
     const category = document.querySelectorAll("select");
+    const divContainer = document.querySelectorAll(".div-container");
     const firstfooter = document.querySelectorAll("#ffooter");
     const footerA = document.querySelectorAll(".footer-a");
     const footerIMG = document.querySelectorAll(".IMG");
@@ -21,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.querySelectorAll(".btn-text");
     const btn = document.querySelectorAll(".btn-outline-dark");
     const cardRow = document.querySelectorAll("#card-row");
+    const iconSec = document.querySelectorAll(".div-container i");
+    const iconSecInr = document.querySelectorAll(".innerIcon i");
 
 
     toggle.addEventListener("change", () => {
@@ -28,13 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
             body.style.backgroundColor = "#151623";
             body.style.color = "#fff";
 
-            h2.forEach(h => h.style.color = "#000");
+            h2.forEach(h => h.style.color = "#fff");
 
-            h3.forEach(h => h.style.color = "#000");
+            h3.forEach(h => h.style.color = "#fff");
 
-            h5.forEach(h => h.style.color = "#000");
+            h5.forEach(h => h.style.color = "#fff");
 
-            h6.forEach(h => h.style.color = "#000");
+            h6.forEach(h => h.style.color = "#fff");
+
+            iconSecInr.forEach(irrow => irrow.style.color = "#fff!important");
 
             category.forEach(select => {
                 select.style.backgroundColor = "#151623";
@@ -49,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.style.backgroundColor = "#fff";
                 div.style.color = "#000";
             
+            });
+
+            iconSec.forEach(i => {
+                i.style.color = "#fff";
             });
             
 
@@ -82,10 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.style.color = "#fff";
             
             });
+            divContainer.forEach(div => {
+                div.style.backgroundColor = "#272935";
+                div.style.color = "#fff!important";
+            });
 
         } else {
             body.style.backgroundColor = "white";
-            body.style.color = "black";
+            body.style.color = "black!important";
 
             h2.forEach(h => h.style.color = "#000");
 
@@ -94,6 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             h5.forEach(h => h.style.color = "#000");
 
             h6.forEach(h => h.style.color = "#000");
+
+            iconSecInr.forEach(irrow => irrow.style.color = "#000");
             
             paragraphs.forEach(p => p.style.color = "black");
 
@@ -108,6 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             btn.forEach(btn => {
                 btn.style.border = "1px solid #000";
+            });
+
+            iconSec.forEach(i => {
+                i.style.color = "#000";
             });
             
 

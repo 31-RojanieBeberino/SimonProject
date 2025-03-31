@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins-Regular.ttf') format('ttf');
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -81,6 +81,11 @@ button:hover {
 /* HOMEPAGE */
 
 /* sticky header */
+
+
+.div-container i {
+    font-size: 70px;
+}
 
 
 /* for sticky menu toggle */
@@ -237,6 +242,8 @@ button:hover {
 .div-container {
     background: #F8F8F8;
     border-radius: 8px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 #featured h3 {
@@ -249,6 +256,7 @@ button:hover {
     padding: 5px 10px;
     color: #000;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #featured .project-list a {
@@ -257,6 +265,16 @@ button:hover {
 
 #featured #hideShow {
     display: none;
+}
+
+.modal-footer .btn-primary{
+    background-color:#BBDEFB;
+    border: 1px solid #BBDEFB;
+    color:#000;
+}
+
+.modal-footer .btn-primary:hover{
+    background-color:#BBDEFB!important;
 }
 
 
@@ -328,9 +346,22 @@ button:hover {
     color: #000 !important;
 }
 
-#blog-page i.bi.bi-arrow-right-circle:before {
-    color: #000 !important;
+
+.innerIcon i {
+    color:#000;
 }
+
+.modal-body .codeBlock{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
+.modal-header .innerIcon i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 /* footer */
 

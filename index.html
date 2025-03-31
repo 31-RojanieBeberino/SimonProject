@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <!-- Bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- included the css -->
-     <link rel="stylesheet" href="./style/style.css">
-     <link rel="stylesheet" href="./style/custom-responsive.css">
+     <link rel="stylesheet" href="style/style.css">
+     <link rel="stylesheet" href="style/custom-responsive.css">
 </head>
 <body>
     
@@ -314,24 +314,48 @@
                                 <img src="./assets/image/With_Language_1.png" style="width: 150px;" class="img-fluid" alt="Responsive image">
                             </div>
                             <div class="project-list d-flex gap-2 flex-wrap">
-                                <a href="">
+                                <a href="/assets/image/PDF/SamplePDF.pdf" target="_blank">
                                     <span>PDF</span>
                                 </a>
-                                <a href="">
+                                <div class="cite" data-bs-toggle="modal" data-bs-target="#CiteModal">
                                     <span>Cite</span>
-                                </a>
-                                <a href="">
+                                </div>
+                                <a href="https://huggingface.co/physical-intelligence/fast" target="_blank">
                                     <span>Code</span>
                                 </a>
-                                <a href="">
+                                <a href="https://huggingface.co/datasets/oier-mees/FuSe" target="_blank">
                                     <span>Dataset</span>
                                 </a>
-                                <a href="">
-                                    <span>DOI</span>
-                                </a>
-                                <a href="">
+                                <div href="https://fuse-model.github.io/">
                                     <span>Project</span>
-                                </a>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="CiteModal" tabindex="-1" aria-labelledby="CiteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content div-container">
+                                    <div class="modal-header d-flex justify-content-between">
+                                      <h1 class="modal-title fs-5" id="CiteModalLabel">Modal title</h1>
+                                      <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                        <a class="innerIcon">
+                                          <i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                                        </a>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="codeBlock">
+                                        <code id="">@inproceedings{mees23hulc2,
+                                            title={Grounding  Language  with  Visual  Affordances  over  Unstructured  Data},
+                                            author={Oier Mees and Jessica Borja-Diaz and Wolfram Burgard},
+                                            booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+                                            year={2023},
+                                            address = {London, UK}
+                                          }</code>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" id="copyBtn">Copy Code</button>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
 
@@ -351,25 +375,48 @@
                                 <img src="./assets/image/show_picture1.png" style="width: 150px;" class="img-fluid" alt="Responsive image">
                             </div>
                             <div class="project-list d-flex gap-2 flex-wrap">
-                                <a href="">
+                                <a href="/assets/image/PDF/SamplePDF.pdf" target="_blank">
                                     <span>PDF</span>
                                 </a>
-                                <a href="">
+                                <div class="cite" data-bs-toggle="modal" data-bs-target="#CiteModal">
                                     <span>Cite</span>
-                                </a>
-                                <a href="">
+                                </div>
+                                <a href="https://huggingface.co/physical-intelligence/fast" target="_blank">
                                     <span>Code</span>
                                 </a>
-                                <a href="">
+                                <a href="https://huggingface.co/datasets/oier-mees/FuSe" target="_blank">
                                     <span>Dataset</span>
                                 </a>
-                                <a href="">
-                                    <span>DOI</span>
-                                </a>
-                                <a href="">
+                                <div href="https://fuse-model.github.io/">
                                     <span>Project</span>
-                                </a>
-                                
+                                </div>
+                            </div>
+                            <div class="modal fade" id="CiteModal" tabindex="-1" aria-labelledby="CiteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content div-container">
+                                    <div class="modal-header d-flex justify-content-between">
+                                      <h1 class="modal-title fs-5" id="CiteModalLabel">Modal title</h1>
+                                      <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                        <a class="innerIcon">
+                                          <i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                                        </a>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="codeBlock">
+                                        <code id="">@inproceedings{mees23hulc2,
+                                            title={Grounding  Language  with  Visual  Affordances  over  Unstructured  Data},
+                                            author={Oier Mees and Jessica Borja-Diaz and Wolfram Burgard},
+                                            booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+                                            year={2023},
+                                            address = {London, UK}
+                                          }</code>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" id="copyBtn">Copy Code</button>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -390,25 +437,48 @@
                                     <img src="./assets/image/With_Language_1.png" style="width: 150px;" class="img-fluid" alt="Responsive image">
                                 </div>
                                 <div class="project-list d-flex gap-2 flex-wrap">
-                                    <a href="">
+                                    <a href="/assets/image/PDF/SamplePDF.pdf" target="_blank">
                                         <span>PDF</span>
                                     </a>
-                                    <a href="">
+                                    <div class="cite" data-bs-toggle="modal" data-bs-target="#CiteModal">
                                         <span>Cite</span>
-                                    </a>
-                                    <a href="">
+                                    </div>
+                                    <a href="https://huggingface.co/physical-intelligence/fast" target="_blank">
                                         <span>Code</span>
                                     </a>
-                                    <a href="">
+                                    <a href="https://huggingface.co/datasets/oier-mees/FuSe" target="_blank">
                                         <span>Dataset</span>
                                     </a>
-                                    <a href="">
-                                        <span>DOI</span>
-                                    </a>
-                                    <a href="">
+                                    <div href="https://fuse-model.github.io/">
                                         <span>Project</span>
-                                    </a>
-                                    
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="CiteModal" tabindex="-1" aria-labelledby="CiteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content div-container">
+                                        <div class="modal-header d-flex justify-content-between">
+                                          <h1 class="modal-title fs-5" id="CiteModalLabel">Modal title</h1>
+                                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                            <a class="innerIcon">
+                                              <i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                                            </a>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="codeBlock">
+                                            <code id="">@inproceedings{mees23hulc2,
+                                                title={Grounding  Language  with  Visual  Affordances  over  Unstructured  Data},
+                                                author={Oier Mees and Jessica Borja-Diaz and Wolfram Burgard},
+                                                booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+                                                year={2023},
+                                                address = {London, UK}
+                                              }</code>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" id="copyBtn">Copy Code</button>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -428,25 +498,48 @@
                                     <img src="./assets/image/show_picture.png" style="width: 150px;" class="img-fluid" alt="Responsive image">
                                 </div>
                                 <div class="project-list d-flex gap-2 flex-wrap">
-                                    <a href="">
+                                    <a href="/assets/image/PDF/SamplePDF.pdf" target="_blank">
                                         <span>PDF</span>
                                     </a>
-                                    <a href="">
+                                    <div class="cite" data-bs-toggle="modal" data-bs-target="#CiteModal">
                                         <span>Cite</span>
-                                    </a>
-                                    <a href="">
+                                    </div>
+                                    <a href="https://huggingface.co/physical-intelligence/fast" target="_blank">
                                         <span>Code</span>
                                     </a>
-                                    <a href="">
+                                    <a href="https://huggingface.co/datasets/oier-mees/FuSe" target="_blank">
                                         <span>Dataset</span>
                                     </a>
-                                    <a href="">
-                                        <span>DOI</span>
-                                    </a>
-                                    <a href="">
+                                    <div href="https://fuse-model.github.io/">
                                         <span>Project</span>
-                                    </a>
-                                    
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="CiteModal" tabindex="-1" aria-labelledby="CiteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content div-container">
+                                        <div class="modal-header d-flex justify-content-between">
+                                          <h1 class="modal-title fs-5" id="CiteModalLabel">Modal title</h1>
+                                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                            <a class="innerIcon">
+                                              <i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                                            </a>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="codeBlock">
+                                            <code id="">@inproceedings{mees23hulc2,
+                                                title={Grounding  Language  with  Visual  Affordances  over  Unstructured  Data},
+                                                author={Oier Mees and Jessica Borja-Diaz and Wolfram Burgard},
+                                                booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+                                                year={2023},
+                                                address = {London, UK}
+                                              }</code>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" id="copyBtn">Copy Code</button>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -762,6 +855,29 @@
        </section>
 
        
-    <script src="./script/home.js"></script>
+    <script src="script/home.js"></script>
+
+    <script src="script/blog.js"></script>
+
+    <!-- Bootstrap 5 JavaScript Bundle (with Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#copyBtn').click(function() {
+                var copyText = $('#copyText');
+                copyText.select();
+                document.execCommand("copy");
+                
+                // Change button text for confirmation
+                $(this).text("Copied!").addClass("btn-success");
+                setTimeout(() => {
+                    $(this).text("Copy").removeClass("btn-success");
+                }, 2000);
+            });
+        });
+    </script>
 </body>
 </html>
