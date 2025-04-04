@@ -241,7 +241,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             footerIMG.forEach(div => {
                 div.style.filter = "invert(0)";
-            
             });
 
             secondfooter.forEach(div => {
