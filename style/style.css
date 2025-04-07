@@ -80,6 +80,21 @@ button:hover {
 
 /* HOMEPAGE */
 
+
+
+
+.spaceSec{
+    width: 18%!important;
+}
+
+.mainSection{
+    width:82%!important;
+}
+
+
+
+
+
 /* sticky header */
 
 
@@ -125,6 +140,16 @@ button:hover {
     background-color: #fff;
     transition: 0.4s;
 }
+
+
+
+.mainNavSec{
+    width: 15%;
+}
+
+
+
+
 #sticky .nav {
     position: fixed;
     top: 0;

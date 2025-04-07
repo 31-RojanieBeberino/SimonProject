@@ -63,7 +63,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-lg-2 p-0 m-0">
-                    <nav class="p-2">
+                    <nav class="p-2 mainNavSec">
                         
                         <a href="index.html">
                             <img src="./assets/image/Capture2.png" style="width: 100px;" class="img-fluid" alt="Responsive image">
@@ -110,28 +110,31 @@
     
    <!-- Blog section -->
     <section id="blog-page">
-        <div class="contanier-fluid d-flex flex-column justify-content-center align-items-center px-3 p-5">
-            <div class="row col-12 col-xl-10 d-flex justify-content-between align-items-center gap-4">
-                    <div class="col-12 col-xl-2 d-flex gap-0 justify-content-between" style="border-bottom: 1px solid #707070;">
-                        <p>Search By Title</p>
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <div class="col-12 col-xl-4 d-flex gap-5 justify-content-end align-items-center">
-                        <select name="category" id="category">
-                            <option value="">Select Category</option>
-                            <option value="">Lan-Grasp</option>
-                            <option value="">Semantic Object</option>
-                            <option value="">Grasping With Lan-Grasp</option>
-                        </select>
-                    </div>
+        <div class="contanier-fluid d-flex justify-content-lg-start justify-content-center align-items-start">
+            <div class="spaceSec"></div>
+            <div class="row col-6 d-flex justify-content-lg-between justify-content-center align-items-center gap-4 mainSection">
+                <div class="col-8 col-xl-2 d-flex gap-0 justify-content-between align-items-center p-3" style="border-bottom: 1px solid #707070; ">
+                    <p class="m-0">Search By Title</p>
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="col-10 col-xl-4 d-flex gap-5 justify-content-lg-end justify-content-center align-items-center">
+                    <select name="category" id="category">
+                        <option value="">Select Category</option>
+                        <option value="">Lan-Grasp</option>
+                        <option value="">Semantic Object</option>
+                        <option value="">Grasping With Lan-Grasp</option>
+                    </select>
+                </div>
             </div>
+        </div>
 
-            <div class="row col-12 col-xl-10 px-0 p-5">
-                <div id="card-row" class="w-100 d-flex p-0 flex-wrap div-container">
-                    <div class="col-12 col-xl-6 p-0">
+            <div class="d-flex px-0 p-5 justify-content-center">
+                <div class="spaceSec"></div>
+                <div id="card-row" class="row w-100 d-flex p-0 justify-content-center mainSection">
+                    <div class="col-11 col-xl-6 p-0">
                         <img src="./assets/image/blog-img1.webp" class="img-fluid" alt="Responsive image">
                     </div>
-                    <div class="col-12 col-xl-6 p-5 d-flex flex-column justify-content-between">
+                    <div class="col-11 col-xl-6 p-5 d-flex flex-column justify-content-between">
                         <h6 class="mb-5">
                             Sep 09, 2024 - 7 Min Read
                         </h6>
@@ -150,71 +153,75 @@
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center gap-5 col-12 col-xl-10 px-0 p-5">
+            <div class="d-flex justify-content-center">
+                <div class="spaceSec"></div>
+                <div class="row d-flex justify-content-lg-start justify-content-center gap-4 col-12 col-xl-10 px-0 p-5 mainSection">
 
-                <div class="col-12 col-xl-3 d-flex p-5 flex-column justify-content-between div-container">
-                    <i class="bi bi-file-earmark-pdf-fill"></i>
-                    <h3>
-                        Leveraging Large Language Models For Smart Object Grasping: The Lan-Grasp Approach
-                    </h3>
-                    
-                    <h6  class="border-bot">
-                        Read The E-Book
-                    </h6>
-
-                </div>
-
-                <div class="col-12 col-xl-4 d-flex p-0 flex-column div-container">
-                    <div class="w-100 p-0">
-                        <img src="./assets/image/blog-img2.webp" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="p-5 d-flex flex-column justify-content-between">
-                        <h6>
-                            Aug 29, 2024 - 4 Min Read
-                        </h6>
-
+                    <div class="col-11 col-xl-12 d-flex p-5 flex-column justify-content-between div-container">
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
                         <h3>
-                            Lan-Grasp: Bridging Language And Robotics For Advanced Object Grasping
+                            Leveraging Large Language Models For Smart Object Grasping: The Lan-Grasp Approach
                         </h3>
                         
-                        <div class="col d-flex justify-content-between align-items-end">
-                            <h6>Read More</h6>
-                            <a class="innerIcon" href="blog - inner.html">
-                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-4 d-flex p-0 flex-column div-container">
-                    <div class="w-100 p-0">
-                        <img src="./assets/image/blog-img3.webp" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="p-5 d-flex flex-column justify-content-between">
-                        <h6>
-                            Aug 29, 2024 - 4 Min Read
+                        <h6  class="border-bot">
+                            Read The E-Book
                         </h6>
-
-                        <h3>
-                            Semantic Object Grasping With Lan-Grasp: The Power Of Large Language Models
-                        </h3>
-                        
-                        <div class="col d-flex justify-content-between align-items-end">
-                            <h6>Read More</h6>
-                            <a  class="innerIcon" href="blog - inner.html">
-                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
-                            </a>
-                           
+    
+                    </div>
+    
+                    <div class="col-11 col-xl-5 d-flex p-0 flex-column div-container">
+                        <div class="w-100 p-0">
+                            <img src="./assets/image/blog-img2.webp" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="p-5 d-flex flex-column justify-content-between">
+                            <h6>
+                                Aug 29, 2024 - 4 Min Read
+                            </h6>
+    
+                            <h3>
+                                Lan-Grasp: Bridging Language And Robotics For Advanced Object Grasping
+                            </h3>
+                            
+                            <div class="col d-flex justify-content-between align-items-end">
+                                <h6>Read More</h6>
+                                <a class="innerIcon" href="blog - inner.html">
+                                    <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+    
+                    <div class="col-11 col-xl-5 d-flex p-0 flex-column div-container">
+                        <div class="w-100 p-0">
+                            <img src="./assets/image/blog-img3.webp" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="p-5 d-flex flex-column justify-content-between">
+                            <h6>
+                                Aug 29, 2024 - 4 Min Read
+                            </h6>
+    
+                            <h3>
+                                Semantic Object Grasping With Lan-Grasp: The Power Of Large Language Models
+                            </h3>
+                            
+                            <div class="col d-flex justify-content-between align-items-end">
+                                <h6>Read More</h6>
+                                <a  class="innerIcon" href="blog - inner.html">
+                                    <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
-
             </div>
 
-            <div class="row col-12 col-xl-10 px-0 p-5">
-                <div id="card-row" class="w-100 d-flex p-0 flex-wrap div-container">
+            <div class="d-flex justify-content-center">
+                <div class="spaceSec"></div>
+                <div id="card-row" class="row w-100 d-flex p-0 justify-content-center div-container mainSection">
                 
-                    <div class="col-12 col-xl-6 p-5 d-flex flex-column justify-content-between">
+                    <div class="col-11 col-xl-6 p-5 d-flex flex-column justify-content-between">
                         <h6 class="mb-5">
                             Aug 29, 2024 - 4 Min Read
                         </h6>
@@ -223,7 +230,7 @@
                             How Lan-Grasp Uses AI To Understand And Grasp Objects Intuitively
                         </h3>
                         
-                        <div class="col d-flex justify-content-between align-items-end">
+                        <div class="col-11 d-flex justify-content-between align-items-end">
                             <h6>Read More</h6>
                             <a class="innerIcon" href="blog - inner.html">
                                 <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
@@ -231,137 +238,143 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-6 p-0">
+                    <div class="col-11 col-xl-6 p-0">
                         <img src="./assets/image/Without_Language_2.png" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center gap-5 col-12 col-xl-10 px-0 p-5">
+            <div class="d-flex justify-content-center">
+                <div class="spaceSec"></div>
+                <div class="row d-flex justify-content-lg-start justify-content-center gap-5 col-12 col-xl-10 px-0 p-5 mainSection">
 
-                <div class="col-12 col-xl-4 d-flex p-0 flex-column div-container">
-                    <div class="w-100 p-0">
-                        <img src="./assets/image/blog-img4.webp" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="p-5 d-flex flex-column justify-content-between">
-                        <h6>
-                            Aug 29, 2024 - 4 Min Read
-                        </h6>
-
-                        <h3>
-                            The Intersection Of Language Models And Robotic Precision
-                        </h3>
-                        
-                        <div class="col d-flex justify-content-between align-items-end">
-                            <h6>Read More</h6>
-                            <a class="innerIcon" href="blog - inner.html">
-                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
-                            </a>
+                    <div class="col-11 col-xl-5 d-flex p-0 flex-column div-container">
+                        <div class="w-100 p-0">
+                            <img src="./assets/image/blog-img4.webp" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="p-5 d-flex flex-column justify-content-between">
+                            <h6>
+                                Aug 29, 2024 - 4 Min Read
+                            </h6>
+    
+                            <h3>
+                                The Intersection Of Language Models And Robotic Precision
+                            </h3>
+                            
+                            <div class="col d-flex justify-content-between align-items-end">
+                                <h6>Read More</h6>
+                                <a class="innerIcon" href="blog - inner.html">
+                                    <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 col-xl-4 d-flex p-0 flex-column div-container">
-                    <div class="w-100 p-0">
-                        <img src="./assets/image/blog-img5.webp" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="p-5 d-flex flex-column justify-content-between">
-                        <h6>
-                            Aug 29, 2024 - 4 Min Read
-                        </h6>
-
-                        <h3>
-                            Semantic Object Grasping Meets AI: Discover The Lan-Grasp Advantage
-                        </h3>
-                        
-                        <div class="col d-flex justify-content-between align-items-end">
-                            <h6>Read More</h6>
-                            <a class="innerIcon" href="blog - inner.html">
-                                <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
-                            </a>
+    
+                    <div class="col-11 col-xl-5 d-flex p-0 flex-column div-container">
+                        <div class="w-100 p-0">
+                            <img src="./assets/image/blog-img5.webp" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="p-5 d-flex flex-column justify-content-between">
+                            <h6>
+                                Aug 29, 2024 - 4 Min Read
+                            </h6>
+    
+                            <h3>
+                                Semantic Object Grasping Meets AI: Discover The Lan-Grasp Advantage
+                            </h3>
+                            
+                            <div class="col d-flex justify-content-between align-items-end">
+                                <h6>Read More</h6>
+                                <a class="innerIcon" href="blog - inner.html">
+                                    <i class="bi bi-arrow-right-circle" style="font-size: 35px;"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+    
+                    <div class="col-11 col-xl-10 d-flex p-5 flex-column justify-content-between div-container">
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+                        <h3>
+                            From Words To Action: How Lan-Grasp Transforms Object Grasping With AI
+                        </h3>
+                        
+                        <h6  class="border-bot">
+                            Read The E-Book
+                        </h6>
+    
+                    </div>
+    
                 </div>
-
-                <div class="col-12 col-xl-3 d-flex p-5 flex-column justify-content-between div-container">
-                    <i class="bi bi-file-earmark-pdf-fill"></i>
-                    <h3>
-                        From Words To Action: How Lan-Grasp Transforms Object Grasping With AI
-                    </h3>
-                    
-                    <h6  class="border-bot">
-                        Read The E-Book
-                    </h6>
-
-                </div>
-
             </div>
             
-            <div class="col-12 col-xl-10" style="border-top: 1px solid #707070;">
-                <div class="d-flex m-5 mx-0 justify-content-between">
-                    <button type="button" class="btn btn-outline-dark">
-                        <a href="" class="btn-text">PREVIOUS ARTICLES</a>
-                    </button>
-                    <button type="button" class="btn btn-outline-dark">
-                        <a href="" class="btn-text">NEXT ARTICLES</a>
-                    </button>
+            <div class="d-flex p-3">
+                <div class="spaceSec"></div>
+                <div class="col-11 col-xl-10 mainSection" style="border-top: 1px solid #707070;">
+                    <div class="d-flex m-5 mx-0 justify-content-between">
+                        <button type="button" class="btn btn-outline-dark">
+                            <a href="" class="btn-text">PREVIOUS ARTICLES</a>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark">
+                            <a href="" class="btn-text">NEXT ARTICLES</a>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-12 col-xl-10 p-4 d-flex flex-wrap justify-content-start align-items-center gap-5 div-container" style="background: #F8F8F8; border-radius: 12px;">
-                <div class="">
-                    <img src="./assets/image/1708276955468.png" style="width: 300px;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div>
-                    <h2>
-                        Simone Silenzi
-                    </h2>
-                    <h5 class="m-0 p-0">
-                        Robot Learning | Software Engineer C++ and Python
-                    </h5>
-                    <h5 class="m-0 p-0">
-                        Sandstrasse 49, 80335 Munchen, Germany
-                    </h5>
-
-                    <div class="w-100 d-flex justify-content-start mt-3">
-                        <div class="footer-icons d-flex align-items-center flex-wrap gap-3">
-
-                         <div class="image-wrap d-flex justify-content-center">
-                             <a href="">
-                                 <img src="./assets/image/email.svg"alt="">
-                             </a>
-                         </div>
-
-                         <div class="image-wrap d-flex justify-content-center">
-                             <a href="">
-                                 <img src="./assets/image/linkedln.svg"alt="">
-                             </a>
-                         </div>
-
-                         <div class="image-wrap d-flex justify-content-center">
-                             <a href="">
-                                 <img src="./assets/image/github.svg"alt="">
-                             </a>
-                         </div>
-
-                         <div class="image-wrap d-flex justify-content-center">
-                             <a href="">
-                                 <img src="./assets/image/g.svg"alt="">
-                             </a>
-                         </div>
-
-                         <div class="image-wrap d-flex justify-content-center">
-                             <a href="">
-                                 <img src="./assets/image/id.svg"alt="">
-                             </a>
-                         </div>
-
+            <div class="d-flex p-3">
+                <div class="spaceSec"></div>
+                <div class="col-11 col-xl-10 p-4 d-flex flex-wrap justify-content-start align-items-center gap-5 div-container mainSection" style="background: #F8F8F8; border-radius: 12px;">
+                    <div class="">
+                        <img src="./assets/image/1708276955468.png" style="width: 300px;" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div>
+                        <h2>
+                            Simone Silenzi
+                        </h2>
+                        <h5 class="m-0 p-0">
+                            Robot Learning | Software Engineer C++ and Python
+                        </h5>
+                        <h5 class="m-0 p-0">
+                            Sandstrasse 49, 80335 Munchen, Germany
+                        </h5>
+    
+                        <div class="w-100 d-flex justify-content-start mt-3">
+                            <div class="footer-icons d-flex align-items-center flex-wrap gap-3">
+    
+                                <div class="image-wrap d-flex justify-content-center">
+                                    <a href="">
+                                        <img src="./assets/image/email.svg"alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="image-wrap d-flex justify-content-center">
+                                    <a href="">
+                                        <img src="./assets/image/linkedln.svg"alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="image-wrap d-flex justify-content-center">
+                                    <a href="">
+                                        <img src="./assets/image/github.svg"alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="image-wrap d-flex justify-content-center">
+                                    <a href="">
+                                        <img src="./assets/image/g.svg"alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="image-wrap d-flex justify-content-center">
+                                    <a href="">
+                                        <img src="./assets/image/id.svg"alt="">
+                                    </a>
+                                </div>
+    
+                            </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
-
-                
-                
             </div>
 
         </div>
@@ -456,7 +469,6 @@
        </section>
 
        
-    <!-- <script src="script/home.js"></script> -->
 
     <script src="script/blog.js"></script>
 

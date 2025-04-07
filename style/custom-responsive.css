@@ -30,6 +30,14 @@
     #info .info-pic {
         margin-top: -50px !important;
     }
+
+    .spaceSec{
+        display: none!important;
+    }
+
+    .mainSection{
+        width: 100%!important;
+    }
 }
 
 
